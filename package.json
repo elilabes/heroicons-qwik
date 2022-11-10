@@ -1,0 +1,45 @@
+{
+  "name": "heroicons-qwik",
+  "version": "0.1.0-beta.2",
+  "description": "Qwik implementation of Heroicons",
+  "license": "MIT",
+  "author": "Eli Labes",
+  "files": [
+    "20",
+    "24"
+  ],
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "build": "yarn build.icons && qwik build",
+    "build.lib": "vite build --mode lib",
+    "build.types": "tsc --emitDeclarationOnly",
+    "build.icons": "node ./scripts/build.cjs",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint src/**/*.ts*",
+    "release": "np",
+    "start": "vite --open --mode ssr"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "0.12.1",
+    "@svgr/core": "^6.5.1",
+    "@types/eslint": "8.4.8",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "5.41.0",
+    "@typescript-eslint/parser": "5.41.0",
+    "eslint": "8.26.0",
+    "eslint-plugin-qwik": "latest",
+    "node-fetch": "3.2.10",
+    "np": "7.6.1",
+    "prettier": "2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "4.8.4",
+    "vite": "3.2.1"
+  }
+}
