@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Qwik implementation of heroicons<a href="https://heroicons.com"><strong>Browse at Heroicons.com &rarr;</strong></a>  
+  Qwik implementation of heroicons - <a href="https://heroicons.com"><strong>Browse at Heroicons.com &rarr;</strong></a>  
 </p>
 
 This is an implementation of Heroicons in the [Qwik](https://qwik.builder.io/) framework.
